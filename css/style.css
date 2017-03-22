@@ -1,0 +1,193 @@
+
+
+body{
+   background: #F5F3EE;
+
+}
+p{
+
+}
+
+/* Logo */
+
+.logo img{
+  margin-top: 20px;
+}
+/* Side Menu */
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    transform: translateX(250px);
+    overflow-y: auto;
+    background: #222;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 55px;
+    font-size: 18px;
+    line-height: 55px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+#menu-toggle {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.toggle {
+    margin: 15px 15px 0 0;
+}
+
+
+/* headings */
+
+.heading h1{
+  font-size: 500%;
+  padding: 20px 0;
+  color: #666666;
+  line-height: 1.2;
+  font-family: 'Aleo', sans-serif;
+
+}
+h2{
+  font-size: 300%;
+  font-family: 'Aleo', sans-serif;
+  color: #666666;
+  line-height: 1.2;
+}
+
+/* Portfolio section*/
+#portfolio{
+  margin-top: 60px;
+}
+.portfolio-item{
+  width: 270px;
+}
+
+/* skills section */
+
+#skills h2{
+  padding: 50px 0;
+}
+
+#skills ul{
+    float: left;
+    list-style: none;
+    margin: 0px 0px 0px 0px;
+    width: 220px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#skills li {
+     font-size: 170%;
+      font-family: 'Avenir', sans-serif;
+      line-height: 1.5;
+
+}
+.code{
+  color: #000;
+  font-size: 1000%;
+}
+
+/* contact section*/
+
+#contact{
+  margin-top: 60px;
+}
+#contact a{
+  color: #666666 !important;
+  font-size: 150%;
+  text-decoration: none;
+  font-family: 'Aeo', sans-serif;
+}
+#contact a i{
+  color: #666666 !important;
+  font-size: 150%;
+
+}
+
+/* footer section*/
+
+footer{
+  margin-top: 40px;
+  margin-bottom: -20px !important;
+  padding: 30px 0;
+  width: 100%;
+}
+
+.social li, .copy{
+  padding: 10px 20px;
+}
+.copy p{
+    font-family: 'Avenir', sans-serif;
+    font-size: 120%
+}
+
+.fa{
+  font-size: 200% !important;
+  color: #666666 !important;
+}
+.footer-icon img{
+   margin-bottom: -40px;
+}
