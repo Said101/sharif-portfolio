@@ -1,7 +1,7 @@
 
 
 body{
-   background: #F5F3EE;
+   background: #FFF;
 
 }
 p{
@@ -13,92 +13,20 @@ p{
 .logo img{
   margin-top: 20px;
 }
-/* Side Menu */
-
-#sidebar-wrapper {
-    z-index: 1000;
-    position: fixed;
-    right: 0;
-    width: 250px;
-    height: 100%;
-    transform: translateX(250px);
-    overflow-y: auto;
-    background: #222;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -ms-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
+/* icon-menu */
+.nav-button .btn {
+  padding: 10px 35px !important;
+  display: inline-block;
+  margin-top: 15px;
+  background: #4990E2;
+  font-size: 16px;
+  border: 1px solid transparent;
+  border-radius: 2px;
 }
-
-.sidebar-nav {
-    position: absolute;
-    top: 0;
-    width: 250px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.nav-button .btn a{
+  text-decoration: none;
+  color: #fff;
 }
-
-.sidebar-nav li {
-    text-indent: 20px;
-    line-height: 40px;
-}
-
-.sidebar-nav li a {
-    display: block;
-    text-decoration: none;
-    color: #999;
-}
-
-.sidebar-nav li a:hover {
-    text-decoration: none;
-    color: #fff;
-    background: rgba(255,255,255,0.2);
-}
-
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
-    text-decoration: none;
-}
-
-.sidebar-nav > .sidebar-brand {
-    height: 55px;
-    font-size: 18px;
-    line-height: 55px;
-}
-
-.sidebar-nav > .sidebar-brand a {
-    color: #999;
-}
-
-.sidebar-nav > .sidebar-brand a:hover {
-    color: #fff;
-    background: none;
-}
-
-#menu-toggle {
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    right: 0;
-}
-
-#sidebar-wrapper.active {
-    right: 250px;
-    width: 250px;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -ms-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
-}
-
-.toggle {
-    margin: 15px 15px 0 0;
-}
-
-
 
 
 /* headings */
@@ -106,16 +34,26 @@ p{
 .heading h1{
   font-size: 500%;
   padding: 20px 0;
-  color: #666666;
+  color: #4990E2;
+  opacity: 0.7;
   line-height: 1.2;
   font-family: 'Aleo', sans-serif;
 
 }
 h2{
-  font-size: 300%;
+  font-size: 250%;
   font-family: 'Aleo', sans-serif;
   color: #666666;
   line-height: 1.2;
+  color: #4990E2;
+  opacity: 0.7;
+}
+/*work*/
+.icon-big {
+    font-size: 380%;
+    display: block;
+    color: #25A875;
+    margin-bottom: 10px;
 }
 
 /* Portfolio section*/
@@ -176,20 +114,12 @@ footer{
   margin-bottom: -20px !important;
   padding: 30px 0;
   width: 100%;
+  background: #191919;
 }
 
-.social li, .copy{
-  padding: 10px 20px;
-}
-.copy p{
-    font-family: 'Avenir', sans-serif;
-    font-size: 120%
-}
-
-.fa{
-  font-size: 200% !important;
-  color: #666666 !important;
-}
-.footer-icon img{
-   margin-bottom: -40px;
+.nav li i{
+  padding: 15px;
+  font-size: 200%;
+  color: #fff;
+  text-align: center;
 }
