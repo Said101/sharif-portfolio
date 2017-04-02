@@ -3,8 +3,20 @@
 body{
    background: #FFF;
 
+
 }
-p{
+#header {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/pexels-photo-340152.jpeg') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+
 
 }
 
@@ -12,32 +24,52 @@ p{
 
 .logo img{
   margin-top: 20px;
+  float: left;
+  max-width: 100%;
 }
 /* icon-menu */
 .nav-button .btn {
+  max-width: 100%;
   padding: 10px 35px !important;
   display: inline-block;
   margin-top: 15px;
-  background: #4990E2;
+  background: none;
   font-size: 16px;
-  border: 1px solid transparent;
-  border-radius: 2px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+}
+.nav-button .btn:hover{
+  background: #4990E2;
 }
 .nav-button .btn a{
   text-decoration: none;
   color: #fff;
 }
 
-
 /* headings */
-
-.heading h1{
-  font-size: 500%;
-  padding: 140px 0 30px 0;
-  color: #4990E2;
-  opacity: 0.7;
-  line-height: 1.2;
+.hero-heading h1{
+   font-size: 500%;
+   color: #fff;
   font-family: 'Aleo', sans-serif;
+  padding: 20px 0;
+
+}
+.hero-info{
+  max-width: 50%;
+  padding-bottom: 140px;
+   font-family: 'Raleway', sans-serif;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.8em;
+  letter-spacing: 2px;
+
+
+}
+.info{
+  color: #fff;
+  padding-bottom: 140px;
+  text-align: center;
 
 }
 h2{
@@ -48,17 +80,27 @@ h2{
   color: #4990E2;
   opacity: 0.7;
 }
+h3{
+  font-size: 200%;
+  font-family: 'Aleo', sans-serif;
+  color: #fff;
+  line-height: 1.2;
+  opacity: 0.7;
+}
 /*work*/
 .icon-big {
     font-size: 380%;
     display: block;
-    color: #25A875;
+    color: #6e6e6e;
     margin-bottom: 10px;
 }
 
 /* Portfolio section*/
 #portfolio{
   margin-top: 60px;
+}
+.port-heading{
+  padding-bottom: 30px;
 }
 .portfolio-item{
   width: 270px;
@@ -117,9 +159,42 @@ footer{
   background: #191919;
 }
 
-.nav li i{
-  padding: 15px;
-  font-size: 200%;
-  color: #fff;
-  text-align: center;
+footer a{
+  text-decoration: none;
+  color: #666666;
+  font-size: 20px;
+  text-decoration: none;
+
+  }
+  footer a:hover{
+    color: #fff;
+  }
+  footer a i{
+    padding: 40px 20px 0 20px;
+    color: #fff;
+    font-size: 30px;
+
+
+  }
+.footer2{
+
+  margin-bottom: 0 !important;
+  padding: 20px 0;
+  width: 100%;
+  background: #000;
+}
+
+/* media q*/
+@media only screen and (max-width: 500px) {
+  .hero-info{
+    max-width: 100%;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.3em;
+    letter-spacing: 1px;
+
+
+  }
 }
