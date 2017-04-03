@@ -112,6 +112,10 @@ h3{
 .portfolio-item{
   width: 270px;
 }
+figcaption p{
+  padding: 5px;
+  text-decoration: none;
+}
 
 /* skills section */
 
