@@ -1,221 +1,205 @@
-
-
-body{
-   background: #FFF;
-
-
-}
-#header {
-    display: block;
-    width: 100%;
-    height: auto;
-    text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/pexels-photo-340152.jpeg') no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    text-align: center;
-
+:root {
+  --black: #242729;
+  --orange: #D3741C;
+  --blue: #3C8DC5;
+  --h1-color: #FFFFC7;
 
 }
-
-/* Logo */
-
-.logo img{
-  margin-top: 20px;
-  float: left;
-  max-width: 100%;
+img{
+  width: 100%;
 }
-/* icon-menu */
-.nav-button .btn {
-  max-width: 100%;
-  padding: 10px 35px !important;
-  display: inline-block;
-  margin-top: 15px;
-  background: none;
-  font-size: 16px;
-  border: 1px solid #fff;
-  border-radius: 4px;
-}
-.nav-button .btn:hover{
-  background: #4990E2;
-}
-.nav-button .btn a{
-  text-decoration: none;
-  color: #fff;
-}
-
-/* headings */
-.hero-heading h1{
-   font-size: 500%;
-   color: #fff;
-  font-family: 'Aleo', sans-serif;
-  padding: 20px 0;
-
-}
-.hero-info{
-  max-width: 50%;
-  padding-bottom: 140px;
-   font-family: 'Raleway', sans-serif;
-  margin: 0 auto;
-  color: #fff;
-  font-size: 20px;
-  line-height: 1.8em;
-  letter-spacing: 2px;
-
-
-}
-.info{
-  color: #fff;
-  padding-bottom: 140px;
-  text-align: center;
-
+h1{
+  font-size: 50px;
+  font-size: 70px;
+  color: var(--orange);
 }
 h2{
-  font-size: 250%;
-  font-family: 'Aleo', sans-serif;
-  color: #666666;
-  line-height: 1.2;
-  color: #4990E2;
-  opacity: 0.7;
+  color: var(--black);
+  font-size: 30px;
 }
-h3{
-  font-size: 200%;
-  font-family: 'Aleo', sans-serif;
+.fa{
+  color: var(--blue);
+}
+button{
+  background:var(--blue);
   color: #fff;
-  line-height: 1.2;
-  opacity: 0.7;
-}
-/*work*/
-.icon-big {
-    font-size: 380%;
-    display: block;
-    color: #6e6e6e;
-    margin-bottom: 10px;
-}
+  width: 250px;
+  padding: 10px;
+  border-radius: 50px;
+  margin-top: 12px;
+ }
 
-.skill{
+
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Lora', serif;
+  font-size: 17px;
+  line-height: 1.5em;
+}
+.container{
+  margin: auto;
+ 
+}
+#logo img{
+  margin-top: 6px;
+  margin-left: -15px;
+ 
+  
+ }
+#nav-bar{
   list-style: none;
-  font-size: 16px;
-  padding: 4px 0;
-
+  margin: 0;
+  padding: 0;
 }
-
-/* Portfolio section*/
-#portfolio{
-  margin-top: 60px;
-
+#nav-bar li {
+  display: inline;
+  padding: 10px;
+  margin: 12px;
 }
-.port-heading{
-  padding-bottom: 30px;
-}
-.portfolio-item{
-  width: 270px;
-
-}
-figure {
-  float: right;
-  width: 100%;
-  text-align: center;
-  font-style: italic;
-  font-size: smaller;
-  text-indent: 0;
-  border: thin  solid #666666;
-  padding: 4px;
-  margin: 4px;
-
-}
-
-/* skills section */
-
-#skills h2{
-  padding: 50px 0;
-}
-
-#skills ul{
-    float: left;
-    list-style: none;
-    margin: 0px 0px 0px 0px;
-    width: 220px;
-    margin-top: 20px;
-    text-align: center;
-}
-
-#skills li {
-     font-size: 170%;
-      font-family: 'Avenir', sans-serif;
-      line-height: 1.5;
-
-}
-.code{
-  color: #000;
-  font-size: 1000%;
-}
-
-/* contact section*/
-
-#contact{
-  margin-top: 60px;
-}
-#contact a{
-  color: #666666 !important;
-  font-size: 150%;
+#nav-bar a{
   text-decoration: none;
-  font-family: 'Aeo', sans-serif;
+  color: var(--black);
+  font-size: 1.2em;
 }
-#contact a i{
-  color: #666666 !important;
-  font-size: 150%;
+ 
 
-}
-
-/* footer section*/
-
-footer{
-  margin-top: 40px;
-  margin-bottom: -20px !important;
-  padding: 30px 0;
+#showcase {
+  background: url('../images/pexels-photo-340152.jpeg') center center no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  height: 80vh;
   width: 100%;
-  background: #191919;
+}
+.hero-text{
+  margin-top: 100px;
+}
+#showcase p{
+  color: var(--blue);
+  font-size: 1.6em;
+  line-height: 1.6;
 }
 
-footer a{
-  text-decoration: none;
-  color: #666666;
-  font-size: 20px;
-  text-decoration: none;
-
-  }
-  footer a:hover{
-    color: #fff;
-  }
-  footer a i{
-    padding: 40px 20px 0 20px;
-    color: #fff;
-    font-size: 30px;
-
-
-  }
-.footer2{
-
-  margin-bottom: 0 !important;
-  padding: 20px 0;
+#services{
+  padding: 40px;
+}
+#services .fa{
+  font-size: 60px;
+  padding-top: 50px;
+}
+#portfolio ul{
+  list-style: none;
+  margin-left: -35px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+}
+#project-info button{
   width: 100%;
-  background: #000;
 }
+#contact-info{
+background: var(--black);
+color: #ffffff;
+}
+#contact-info ul{
+   list-style: none;
+}
+#contact-info .social li{
+  display: inline;
+  padding: 10px;
+}
+.social .fa{
+  font-size: 40px;
+}
+/* Media queries*/
 
-/* media queries*/
-@media only screen and (max-width: 500px) {
-  .hero-info{
-    max-width: 100%;
-    padding-bottom: 40px;
-    margin: 0 auto;
-    color: #fff;
-    font-size: 18px;
-    line-height: 1.3em;
-    letter-spacing: 1px;
+@media(max-width: 800px){
+ 
 
+  #nav-bar a{
+    font-size: 1.6em;
+    padding: 5px 0;
+    margin-top: 4px;
+   
 
   }
+  #showcase {
+    opacity: 0.8;
+    height: 50vh;
+  }
+  .hero-text{
+    margin-top: 40px;
+  }
+  #showcase p{
+    color: var(--orange);
+    font-size: 1.9em;
+    line-height: 1.3;
+  }
+  #portfolio ul{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  
+  #logo img{
+   margin: 5px 0 0 10px;
+   width: 220px;
+  
+   
+   
+  }
+  h1{
+  
+    font-size: 40px;
+  }
+  h2{
+    font-size: 25px;
+  }
+  
+
+}
+
+@media(max-width: 500px){
+  
+  #nav-bar li{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-right: 1em;
+  }
+  #nav-bar a{
+    font-size: 1em;
+   
+
+  }
+  #showcase {
+    opacity: 0.8;
+    height: 60vh;
+  }
+  .hero-text{
+    margin-top: 10px;
+  }
+  #showcase p{
+    color: var(--orange);
+    font-size: 1.5em;
+    line-height: 1.3;
+  }
+  #portfolio ul{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  
+  #logo img{
+   margin-top: 5px;
+   margin-left: -15px;
+   width: 110px;
+   
+  }
+  h1{
+  
+    font-size: 40px;
+  }
+  h2{
+    font-size: 25px;
+  }
+  
 }
