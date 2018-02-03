@@ -16,6 +16,8 @@ h1{
 h2{
   color: var(--black);
   font-size: 30px;
+  line-height: 1.2;
+  opacity: 0.7;
 }
 .fa{
   color: var(--blue);
@@ -65,9 +67,8 @@ html, body{
  
 
 #showcase {
-  background: url('../images/pexels-photo-340152.jpeg') center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/pexels-photo-340152.jpeg') center center no-repeat;
   background-size: cover;
-  opacity: 0.9;
   height: 80vh;
   width: 100%;
 }
@@ -75,9 +76,10 @@ html, body{
   margin-top: 100px;
 }
 #showcase p{
-  color: var(--blue);
-  font-size: 1.6em;
-  line-height: 1.6;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.8em;
+  letter-spacing: 2px;
 }
 
 #services{
@@ -124,16 +126,17 @@ color: #ffffff;
 
   }
   #showcase {
-    opacity: 0.8;
-    height: 50vh;
+   
+    height: 80vh;
   }
   .hero-text{
-    margin-top: 40px;
+    margin-top: 10px;
   }
   #showcase p{
-    color: var(--orange);
-    font-size: 1.9em;
-    line-height: 1.3;
+   
+    font-size: 20px;
+    line-height: 1.6em;
+    letter-spacing: 2px;
   }
   #portfolio ul{
     grid-template-columns: repeat(2, 1fr);
@@ -172,16 +175,16 @@ color: #ffffff;
 
   }
   #showcase {
-    opacity: 0.8;
-    height: 60vh;
+    height: 50vh;
   }
   .hero-text{
     margin-top: 10px;
   }
   #showcase p{
-    color: var(--orange);
-    font-size: 1.5em;
-    line-height: 1.3;
+   
+    font-size: 18px;
+    line-height: 1.4em;
+    letter-spacing: 1px;
   }
   #portfolio ul{
     grid-template-columns: repeat(1, 1fr);
