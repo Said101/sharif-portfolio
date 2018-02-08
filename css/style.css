@@ -57,18 +57,20 @@ html, body{
 }
 #nav li {
   display: inline;
-  padding: 10px;
-  margin: 12px;
+  padding: 0 25px;
+  
 }
 #nav a{
   text-decoration: none;
-  color: var(--black);
+  color: var(--blue);
   font-size: 1.2em;
+  padding: 10px 20px;
 }
 #nav a:hover{
-  background: var(--nav-bg-color);
+  background: #4CAF50;;
   border-radius: 40px;
-  padding: 5px 20px;;
+  color: #fff;
+ 
 }
 #nav a:active {
   background-color: #4CAF50;
