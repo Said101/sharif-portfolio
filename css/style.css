@@ -2,7 +2,7 @@
   --black: #242729;
   --orange: #D3741C;
   --blue: #3C8DC5;
-  --h1-color: #FFFFC7;
+  --nav-bg-color: #FFFFC7;
 
 }
 img{
@@ -50,22 +50,30 @@ html, body{
  
   
  }
-#nav-bar{
+#nav{
   list-style: none;
   margin: 0;
   padding: 0;
 }
-#nav-bar li {
+#nav li {
   display: inline;
   padding: 10px;
   margin: 12px;
 }
-#nav-bar a{
+#nav a{
   text-decoration: none;
   color: var(--black);
   font-size: 1.2em;
 }
- 
+#nav a:hover{
+  background: var(--nav-bg-color);
+  border-radius: 40px;
+  padding: 5px 20px;;
+}
+#nav a:active {
+  background-color: #4CAF50;
+  color: white;
+}
 
 #showcase {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/pexels-photo-340152.jpeg') center center no-repeat;
@@ -107,19 +115,28 @@ color: #ffffff;
 #contact-info ul{
    list-style: none;
 }
-#contact-info .social li{
+#social li{
   display: inline;
-  padding: 10px;
+  padding: 0;
+  margin-bottom: 19px;
 }
-.social .fa{
+#social .fa{
   font-size: 40px;
+  padding: 0 20px;
+}
+.center{
+  margin-left: 30px;
+ 
+}
+.center h3{
+  text-decoration: underline;
 }
 /* Media queries*/
 
 @media(max-width: 800px){
  
 
-  #nav-bar a{
+  #nav a{
     font-size: 1.6em;
     padding: 5px 0;
     margin-top: 4px;
@@ -163,14 +180,18 @@ color: #ffffff;
 }
 
 @media(max-width: 500px){
+  .nav-bar{
+    background: var(--nav-bg-color);
+    padding: 5px;
+  }
   
-  #nav-bar li{
+  #nav li{
     display: inline-block;
     margin: 0;
     padding: 0;
     margin-right: 1em;
   }
-  #nav-bar a{
+  #nav a{
     font-size: 1em;
    
 
