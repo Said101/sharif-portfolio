@@ -3,15 +3,23 @@
   --orange: #D3741C;
   --blue: #3C8DC5;
   --nav-bg-color: #FFFFC7;
-
+  --white: #ffffff;
 }
+
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Lora', serif;
+  font-size: 17px;
+  line-height: 1.5em;
+}
+
 img{
   width: 100%;
 }
 h1{
- 
   font-size: 70px;
-  color: #fff;
+  color: var(--white);
   margin-bottom: 0;
   padding: 3px;
   
@@ -27,7 +35,7 @@ h2{
 }
 button{
   background:var(--blue);
-  color: #fff;
+  color: var(--white);
   width: 250px;
   padding: 10px;
   border-radius: 50px;
@@ -35,22 +43,16 @@ button{
  }
 
 
-html, body{
-  margin: 0;
-  padding: 0;
-  font-family: 'Lora', serif;
-  font-size: 17px;
-  line-height: 1.5em;
-}
+
 .container{
   margin: auto;
  
 }
+
+/* Navbar */
 #logo img{
   margin-top: 6px;
   margin-left: -15px;
- 
-  
  }
 #nav{
   list-style: none;
@@ -68,16 +70,12 @@ html, body{
   font-size: 1.2em;
   padding: 10px 20px;
 }
-#nav a:hover{
-  background: #4CAF50;;
-  border-radius: 40px;
-  color: #fff;
+#nav a:hover, #nav a:active{
+  border-bottom: 2px solid var(--black);
+  color: var(--black);
  
 }
-#nav a:active {
-  background-color: #4CAF50;
-  color: white;
-}
+/* ShowCase */
 
 #showcase {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/pexels-photo-340152.jpeg') center center no-repeat;
@@ -89,11 +87,13 @@ html, body{
   margin-top: 100px;
 }
 #showcase p{
-  color: #fff;
+  color: var(--white);
   font-size: 20px;
   line-height: 1.8em;
   letter-spacing: 2px;
 }
+
+/*Services */
 
 #services{
   padding: 40px;
@@ -102,6 +102,9 @@ html, body{
   font-size: 60px;
   padding-top: 50px;
 }
+
+/* Portfolio */
+
 #portfolio ul{
   list-style: none;
   margin-left: -35px;
@@ -112,29 +115,6 @@ html, body{
 #project-info button{
   width: 100%;
 }
-#contact-info{
-background: var(--black);
-color: #ffffff;
-}
-#contact-info ul{
-   list-style: none;
-}
-#social li{
-  display: inline;
-  padding: 0;
-  margin-bottom: 19px;
-}
-#social .fa{
-  font-size: 40px;
-  padding: 0 20px;
-}
-.center{
-  margin-left: 30px;
- 
-}
-.center h3{
-  text-decoration: underline;
-}
 
 /* contact Form */
 
@@ -143,7 +123,7 @@ color: #ffffff;
   padding: 50px 0;
 }
 #contact-form h2{
-  color: #fff;
+  color: var(--white);
   opacity: 9;
 }
 #contact-form form{
@@ -151,7 +131,7 @@ color: #ffffff;
 }
 
 #contact-form button{
-  background: #fff;
+  background: var(--white);
   color: var(--black);
   font-size: 20px;
   margin-top: 0;
@@ -175,30 +155,60 @@ color: #ffffff;
   
 }
 
+ /* Footer contact info */
 
+#contact-info{
+background: var(--black);
+color: var(--white);
+}
+#contact-info ul{
+   list-style: none;
+}
+#social li{
+  display: inline;
+  padding: 0;
+  margin-bottom: 19px;
+}
+#social .fa{
+  font-size: 40px;
+  padding: 0 20px;
+  color: var(--white);
+}
+.center{
+  margin-left: 30px;
+ 
+}
+.center h3{
+  text-decoration: underline;
+}
 
 
 /* Media queries*/
 
 @media(max-width: 800px){
- 
-
+  h1{
+    font-size: 40px;
+    }
+    h2{
+      font-size: 25px;
+    }
+  
+  #logo img{
+    margin: 5px 0 0 10px;
+    width: 220px;
+   }
   #nav a{
     font-size: 1.6em;
     padding: 5px 0;
     margin-top: 4px;
-   
-
-  }
+   }
   #showcase {
-   
-    height: 80vh;
+     height: 80vh;
   }
   .hero-text{
     margin-top: 10px;
   }
   #showcase p{
-   
     font-size: 20px;
     line-height: 1.6em;
     letter-spacing: 2px;
@@ -206,23 +216,7 @@ color: #ffffff;
   #portfolio ul{
     grid-template-columns: repeat(2, 1fr);
   }
-
   
-  #logo img{
-   margin: 5px 0 0 10px;
-   width: 220px;
-  
-   
-   
-  }
-  h1{
-  
-    font-size: 40px;
-  }
-  h2{
-    font-size: 25px;
-  }
-
   /* Contact Form */
   #contact-form input, #contact-form textarea, #contact-form button{
     width: 90%;
@@ -235,6 +229,21 @@ color: #ffffff;
 
 
 @media(max-width: 500px){
+
+  h1{
+  
+    font-size: 40px;
+  }
+  h2{
+    font-size: 25px;
+  }
+
+  #logo img{
+    margin-top: 5px;
+    margin-left: -15px;
+    width: 110px;
+    
+   }
   .nav-bar{
     background: var(--nav-bg-color);
     padding: 5px;
@@ -263,23 +272,11 @@ color: #ffffff;
     line-height: 1.4em;
     letter-spacing: 1px;
   }
+  #portfolio{
+    margin: 20px;
+  }
   #portfolio ul{
     grid-template-columns: repeat(1, 1fr);
-  }
-
-  
-  #logo img{
-   margin-top: 5px;
-   margin-left: -15px;
-   width: 110px;
-   
-  }
-  h1{
-  
-    font-size: 40px;
-  }
-  h2{
-    font-size: 25px;
   }
   
 }
